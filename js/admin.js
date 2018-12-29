@@ -28,6 +28,7 @@ StoreAdmin.bindMenuBtns = function(){
 
 StoreAdmin.loadCategories = function(){
 	$.get("/categories",function(result){
+				console.log("hi")
 		if (result["STATUS"] == "ERROR"){
 			alert(result["MSG"]);
 		}else{
